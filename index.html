@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>サッカー療育スタッフ研修システム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>サッカー療育スタッフ研修システム</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview" class="nav-link active">サッカー療育概論</a></li>
+                <li><a href="#curriculum" class="nav-link">カリキュラム</a></li>
+                <li><a href="#training" class="nav-link">研修資料</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- サッカー療育概論セクション -->
+        <section id="overview" class="content-section active">
+            <h2>サッカー療育概論</h2>
+            <div class="overview-content">
+                <h3>1. サッカー療育とは</h3>
+                <p>サッカー療育は、サッカーというスポーツを通じて、発達に課題を持つ子どもたちの成長を支援する療育手法です。身体的な発達だけでなく、社会性、コミュニケーション能力、認知機能の向上を目指します。</p>
+                
+                <h3>2. サッカー療育の目的</h3>
+                <ul>
+                    <li>運動機能の向上：ボールを使った運動により、粗大運動と微細運動の両方を育成</li>
+                    <li>社会性の発達：チームプレーを通じた協調性とコミュニケーション能力の向上</li>
+                    <li>自己肯定感の育成：成功体験を積み重ねることで自信をつける</li>
+                    <li>ルール理解：スポーツのルールを通じて社会的ルールの理解を促進</li>
+                </ul>
+
+                <h3>3. 基本的なアプローチ</h3>
+                <p>個々の子どもの発達段階と特性に応じて、以下のアプローチを組み合わせます：</p>
+                <ul>
+                    <li>スモールステップ：できることから始めて段階的に難易度を上げる</li>
+                    <li>視覚的支援：言葉だけでなく、視覚的な手がかりを活用</li>
+                    <li>ポジティブな強化：成功体験を積極的に評価し、動機づけを高める</li>
+                    <li>個別配慮：一人ひとりの特性に応じた支援方法の調整</li>
+                </ul>
+
+                <h3>4. 安全管理</h3>
+                <p>療育活動において最も重要なのは安全管理です。以下の点に注意してください：</p>
+                <ul>
+                    <li>環境設定：危険物の除去と適切なスペースの確保</li>
+                    <li>体調管理：活動前の健康チェックと水分補給の徹底</li>
+                    <li>個別配慮：感覚過敏や注意欠陥などの特性に応じた配慮</li>
+                    <li>緊急時対応：事故や体調不良時の対応手順の確認</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- カリキュラムセクション -->
+        <section id="curriculum" class="content-section">
+            <h2>カリキュラム検索</h2>
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="childCharacteristic">子どもの特性</label>
+                    <select id="childCharacteristic">
+                        <option value="">選択してください</option>
+                        <option value="adhd">ADHD（注意欠陥・多動性障害）</option>
+                        <option value="asd">ASD（自閉スペクトラム症）</option>
+                        <option value="ld">LD（学習障害）</option>
+                        <option value="motor">運動発達の遅れ</option>
+                        <option value="communication">コミュニケーションの課題</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="goal">達成したいこと</label>
+                    <select id="goal">
+                        <option value="">選択してください</option>
+                        <option value="motor-skill">運動能力の向上</option>
+                        <option value="social">社会性の向上</option>
+                        <option value="communication">コミュニケーション能力の向上</option>
+                        <option value="rule">ルール理解の促進</option>
+                        <option value="confidence">自己肯定感の向上</option>
+                    </select>
+                </div>
+                <button id="searchCurriculum">検索</button>
+            </div>
+            <div id="curriculumResults" class="results-section"></div>
+        </section>
+
+        <!-- 研修資料セクション -->
+        <section id="training" class="content-section">
+            <h2>研修資料検索</h2>
+            <div class="filter-section">
+                <div class="filter-group">
+                    <label for="issue">困りごと・学習したい内容</label>
+                    <select id="issue">
+                        <option value="">選択してください</option>
+                        <option value="behavior">問題行動への対応</option>
+                        <option value="communication">コミュニケーション支援</option>
+                        <option value="assessment">アセスメント方法</option>
+                        <option value="planning">個別支援計画の作成</option>
+                        <option value="parent">保護者との連携</option>
+                        <option value="safety">安全管理</option>
+                    </select>
+                </div>
+                <button id="searchTraining">検索</button>
+            </div>
+            <div id="trainingResults" class="results-section"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
